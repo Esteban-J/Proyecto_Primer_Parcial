@@ -1,4 +1,5 @@
-sections=("SCRUM" "X.P." "Kanban" "Crystal")
+sectionsA=("SCRUM" "X.P." "Kanban" "Crystal")
+sectionsT=("Cascada" "Espiral" "Modelo v")
 
 mainMenu() {
 if [ ${1,,} = "-a" ]; then
