@@ -1,7 +1,7 @@
-[dede].- fefsefe
-[Arbol].- una planta grande
-[Plantota].- Arbol grandote
-[Magia].- poderes sobrenaturales
-[Mago].- Aquel que utiliza Magia
-[Perro].- Animal de 2 patas
-[Gato].- Animal Felino
+[asd].- asd
+[[arbol]].- cosa
+[fdfgdfgarbol].- cosa 
+[arbol].- asdasd
+[]arbol[].- asdasd[arbol].- sd
+[arbol].- asdasdasdasd
+[arbol].- asdasdasd

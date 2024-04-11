@@ -1,9 +1,12 @@
 #!/bin/bash
+
+#imports
 source mainMenu.sh
 source subMenu.sh
 source addInfo.sh
 source readInfo.sh
 source searchInfo.sh
+
 mainMenu $1
 echo -n ">>"
 read option

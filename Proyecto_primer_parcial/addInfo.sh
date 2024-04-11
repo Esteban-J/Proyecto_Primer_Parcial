@@ -7,19 +7,7 @@ addInfo(){
     fi
     echo introdusca concepto
     read concepto
-    echo introdusca def
-    read def
-    echo "[$concepto].- $def" >> ${sectionsName}.txt
-}
-addInfo2(){
-if [ ${1,,} = "-a" ]; then
-    sectionsName=("${sectionsA[@]}")
-    elif [ ${1,,} = "-t" ]; then
-    sectionsName=("${sectionsT[@]}")
-    fi
-    echo introdusca concepto
-    read concepto
-    echo introdusca def
-    read def
-    echo "[$concepto].- $def" >> ${sectionsName[$2 -1]}
+    echo introdusca deffinición
+    read definition
+    echo "[$concepto].- $definition" >> ${sectionsName}.txt
 }
