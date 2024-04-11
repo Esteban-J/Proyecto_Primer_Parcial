@@ -1,4 +1,4 @@
-sectionsA=("SCRUM" "X.P." "Kanban" "Crystal")
+sectionsA=("SCRUM" "XP" "Kanban" "Crystal")
 sectionsT=("Cascada" "Espiral" "Modelo v")
 
 mainMenu() {
