@@ -4,7 +4,7 @@ search(){
     local concept="$1"
     local sectionsName="$2"
 
-    if grep -iq "^\[$concept\]" "${sectionsName}.inf"; then
+    if grep -iq "^\[$concept\]" "concepts/${sectionsName}.inf"; then
         return 0 
     else
         return 1  
@@ -26,9 +26,9 @@ searchInfo(){
 
     search "$concept" "$sectionsName"
     if [ $? -eq 0 ]; then
-        grep "^\[$concept\]" "${sectionsName}.txt"
+        grep "^\[$concept\]" "concepts/${sectionsName}.inf"
     else
-        echo "No se encontró el concepto '$concept' en el archivo ${sectionsName}.inf"
+        echo "No se encontró el concepto '$concept' en el archivo concepts/${sectionsName}.inf"
     fi
 }
 

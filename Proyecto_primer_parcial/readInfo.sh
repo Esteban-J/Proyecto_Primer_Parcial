@@ -6,5 +6,5 @@ readInfo(){
     elif [ ${1,,} = "-t" ]; then
     sectionsName="${sectionsT[$2 -1]}"
     fi
-    cat ${sectionsName}.txt
+    cat concepts/${sectionsName}.inf
 }
