@@ -6,5 +6,6 @@ readInfo(){
     elif [ ${1,,} = "-t" ]; then
     sectionsName="${sectionsT[$2 -1]}"
     fi
+    clear
     cat concepts/${sectionsName}.inf
 }

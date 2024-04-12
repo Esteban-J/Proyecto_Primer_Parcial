@@ -19,16 +19,16 @@ searchInfo(){
     elif [ "${1,,}" = "-t" ]; then
         sectionsName="${sectionsT[$2 - 1]}"
     fi
-
     echo "¿Qué concepto buscas?"
-    echo -n ">>"
+    echo -n ">>"    
     read concept 
-
     search "$concept" "$sectionsName"
     if [ $? -eq 0 ]; then
+        clear
         grep "^\[$concept\]" "concepts/${sectionsName}.inf"
     else
-        echo "No se encontró el concepto '$concept' en el archivo concepts/${sectionsName}.inf"
+        clear
+        echo "No se encontró el concepto '$concept' en el archivo ${sectionsName}.inf"
     fi
 }
 

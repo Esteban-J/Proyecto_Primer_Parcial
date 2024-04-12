@@ -16,8 +16,10 @@ addInfo(){
     if [ $? -eq 1 ]; then
         echo Introdusca la defiición
         read definition
+        clear
         echo "[$concept].- $definition" >> concepts/${sectionsName}.inf
     else
+        clear
         echo El concepto que intenta ingresar ya existe
     fi
 }
